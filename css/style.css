@@ -1,0 +1,146 @@
+/* General Styles */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+  background-image: url("https://www.beattheboards.com/wp-content/uploads/2018/09/Board-Exam-Study-Procrastination-beat-the-boards.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  object-fit: cover;
+}
+/* General Styles */
+main {
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(2px);
+  height: 100vh;
+}
+
+.container h1 {
+  padding-top: 1.2rem;
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.2rem;
+}
+
+.container {
+  min-height: 40vh;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  padding: 1.5rem 3rem;
+  border: 1px solid rgb(167, 232, 252);
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  box-shadow: rgba(203, 203, 244, 0.1) 0px 8px 24px,
+    rgba(228, 228, 232, 0.1) 0px 16px 56px,
+    rgba(232, 232, 235, 0.1) 0px 24px 80px;
+}
+
+.container form {
+  margin: 1rem;
+  display: flex;
+}
+
+.container form input {
+  font-size: 1.3rem;
+  padding: 0.5rem 0px;
+  letter-spacing: 0.2rem;
+  background: transparent;
+  color: #fff;
+  margin-right: 1rem;
+  border-bottom: 2px solid rgb(167, 232, 252);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+}
+
+.container form input::placeholder {
+  color: #fff;
+}
+
+.container form .btns {
+  display: flex;
+}
+
+.container form .btn {
+  padding: 0.5rem 1.5rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  border-radius: 0.4rem;
+}
+
+.add-lists {
+  background-color: lightgreen;
+  margin-right: 1rem;
+}
+
+.cancel-btn {
+  background-color: red;
+}
+
+.container form .btn:hover {
+  cursor: pointer;
+  transition: all 0.2s linear;
+  transform: translateY(-3px);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.container ul {
+  width: 95%;
+  margin: 2rem auto;
+}
+
+.container ul li {
+  background-color: rgb(167, 232, 252);
+  border-radius: 0.6rem;
+  margin: 1rem 0px;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  padding: 0.5rem 1.5rem 0.5rem 1rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container ul li .close {
+  border: none;
+  color: red;
+  background: transparent;
+  font-size: 2.2rem;
+  cursor: pointer;
+  margin-right: 1rem;
+}
+
+.container ul li .close:hover {
+  transform: translateX(-3px);
+  transition: all 0.2s linear;
+}
+
+.container ul li .completed {
+  border: none;
+  color: rgb(6, 223, 20);
+  background: transparent;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.container ul li .completed:hover {
+  transform: translateX(2px);
+  transition: all 0.2s linear;
+}
